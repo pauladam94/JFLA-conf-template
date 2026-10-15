@@ -65,6 +65,7 @@
   #set table(stroke: none, inset: 2.2pt, column-gutter: 1em)
 
   #show raw: set text(font: "Latin Modern Mono 12")
+  #show raw.where(block: true): set block(above: 1.55em, below: 1.55em)
   #set footnote.entry(gap: 1.2mm)
   #set document(
     title: title,
