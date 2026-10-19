@@ -59,6 +59,7 @@
   #show figure.where(kind: image): set figure(supplement: "Figure")
   #show figure.where(kind: image): set block(spacing: 5mm)
   #show figure.where(kind: image): set place(clearance: 5mm)
+  #show figure: set block(spacing: 5mm)
 
   #show: it => {
     if lang == "fr" {
