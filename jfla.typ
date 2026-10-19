@@ -47,6 +47,9 @@
   #let heading-supplement = if lang == "fr" { "section" } else if lang == "en" {
     "Section"
   }
+  #let conjunct-literal = if lang == "fr" { " et " } else if lang == "en" {
+    " and "
+  }
 
   #if running-title == none {
     running-title = title
@@ -172,7 +175,7 @@
             .map(info => if info.running-name == none { info.name } else {
               info.running-name
             })
-            .join(", ", last: " et "),
+            .join(", ", last: conjunct-literal),
         )
       }
     ],
@@ -275,7 +278,7 @@
           ))
           auth.name + super(affil-indices.map(i => [#i]).join(","))
         })
-        .join(", ", last: " et ")
+        .join(", ", last: conjunct-literal)
     )
   ]
 
