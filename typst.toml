@@ -1,16 +1,15 @@
 [package]
-name = "jfla-conf-template"
+name = "jfla-template"
 version = "1.0.0"
-entrypoint = "jfla.typ"
+entrypoint = "jfla-template.typ"
 authors = ["Paul Adam <@pauladam94>", "Gabriel Sherer <@gasche>"]
 license = "MIT"
 description = "Template for the JFLA conference."
 repository = "https://github.com/pauladam94/JFLA-conf-template"
 keywords = ["template", "article", "jfla"]
-categories = ["template", "article"]
+categories = ["paper"]
 disciplines = ["computer-science", "mathematics"]
 compiler = "0.15.1"
-exclude = ["examples/"]
 
 [template]
 path = "template"

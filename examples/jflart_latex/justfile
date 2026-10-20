@@ -1,0 +1,6 @@
+build:
+    latexmk -pdf jflart.tex
+
+clean:
+    rm -f *.bbl *.aux *.blg *.fls *.log *.fdb_latexmk
+    rm -f jflart.pdf

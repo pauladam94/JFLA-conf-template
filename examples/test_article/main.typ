@@ -1,5 +1,5 @@
-#import "../../jfla.typ": *
-#show: jfla-conf-template.with(
+#import "../../jfla-template.typ": *
+#show: jfla-template.with(
   title: [Gestion de la mémoire sans asynchronie d'un language de script],
   authors: (
     (
@@ -25,10 +25,6 @@
   review-mode: false,
   lang: "fr",
 )
-
-// Packages Import
-#import "@preview/zebraw:0.6.3": zebraw
-#import "@preview/curryst:0.6.0": prooftree, rule, rule-set
 
 = Introduction <section:introduction>
 
@@ -86,6 +82,11 @@ les projets existants qui ont été une inspiration à cette article. #lorem(200
 #lorem(300). In the end we don't forget to cite @JFLART because it is also
 important.
 
+// This can be replaced with :
+// ```
+// #bibliography("bib.bib")
+// ```
+// if you prefer having your bibliography is a separate file.
 #bibliography(
   bytes(
     "

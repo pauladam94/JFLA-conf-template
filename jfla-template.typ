@@ -1,12 +1,6 @@
-
 #import "@preview/bullseye:0.1.0" as bullseye
 
-#import "@preview/theorion:0.6.0": (
-  conjecture, corollary, definition, example, lemma, proof, property, remark,
-  theorem,
-)
-
-#let jfla-conf-template(
+#let jfla-template(
   /// Title of the article displayed at the fist page
   title: none,
   /// Running title present in the header after the first page
@@ -31,8 +25,6 @@
   lang: "fr",
   content,
 ) = [
-  // Import
-  #import "@preview/theorion:0.6.0": cosmos
 
   // Computation of stuff for the template
   #let jfla-footer = if lang == "fr" [
@@ -53,7 +45,6 @@
   }
 
   // Show & Set Rules
-  #show: cosmos.simple.show-theorion
   #show link: underline
   #set figure(kind: image)
   #show figure.where(kind: image): set figure(supplement: "Figure")
@@ -278,7 +269,7 @@
         .join(", ", last: " et ")
     )
   ]
-
+nt. Tu viens au bureau aujourd'hui Mattéo ?
   // Spacing between Authors and Affiliation
   #v(2.5mm)
 

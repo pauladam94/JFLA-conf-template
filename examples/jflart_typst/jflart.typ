@@ -1,9 +1,9 @@
 // compilation command: typst compile --root .. jflart-example.typ
-#import "../../jfla.typ": *
+#import "../../jfla-template.typ": *
 
 #import "@preview/metalogo:1.2.0": LaTeX
 
-#show: jfla-conf-template.with(
+#show: jfla-template.with(
   title: [Soumettre un article aux Journées Francophones des Langages
     Applicatifs en utilisant la classe `jflart.cls`],
   running-title: [Du bon usage de `jflart.cls`],

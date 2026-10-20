@@ -30,6 +30,3 @@
 Comme dans la @section:introduction on a introduit le sujet. #lorem(100).
 
 #bibliography("bib.bib")
-
-
-
