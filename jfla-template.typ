@@ -269,7 +269,7 @@
         .join(", ", last: " et ")
     )
   ]
-nt. Tu viens au bureau aujourd'hui Mattéo ?
+
   // Spacing between Authors and Affiliation
   #v(2.5mm)
 
